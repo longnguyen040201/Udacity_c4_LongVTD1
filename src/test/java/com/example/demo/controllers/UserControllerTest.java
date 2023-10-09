@@ -5,6 +5,8 @@ import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import java.util.Optional;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.ResponseEntity;
@@ -52,4 +54,44 @@ public class UserControllerTest {
 		assertEquals("thisIsHashed", u.getPassword());
 		
 	}
+	
+	@Test
+    public void findById() {
+        when(encoder.encode("testPassword")).thenReturn("thisIsHashed");
+        CreateUserRequest r = new CreateUserRequest();
+        r.setUsername("test");
+        r.setPassword("testPassword");
+        r.setConfirmPassword("testPassword");
+        final ResponseEntity<User> response = userController.createUser(r);
+        Optional<User> user = Optional.ofNullable(response.getBody());
+        when(userRepo.findById(0L)).thenReturn(user);
+
+        final ResponseEntity<User> userResponseEntity = userController.findById(0L);
+
+        User u = userResponseEntity.getBody();
+        assertNotNull(u);
+        assertEquals(0, u.getId());
+        assertEquals("test", u.getUsername());
+        assertEquals("thisIsHashed", u.getPassword());
+    }
+
+    @Test
+    public void findByUserName() {
+        when(encoder.encode("testPassword")).thenReturn("thisIsHashed");
+        CreateUserRequest r = new CreateUserRequest();
+        r.setUsername("test");
+        r.setPassword("testPassword");
+        r.setConfirmPassword("testPassword");
+        final ResponseEntity<User> response = userController.createUser(r);
+        User user = response.getBody();
+        when(userRepo.findByUsername("test")).thenReturn(user);
+
+        final ResponseEntity<User> userResponseEntity = userController.findByUserName("test");
+
+        User u = userResponseEntity.getBody();
+        assertNotNull(u);
+        assertEquals(0, u.getId());
+        assertEquals("test", u.getUsername());
+        assertEquals("thisIsHashed", u.getPassword());
+    }
 }
