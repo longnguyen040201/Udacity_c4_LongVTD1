@@ -1,7 +1,11 @@
-2023-10-08 21:10:32,649 INFO org.springframework.boot.StartupInfoLogger [main] Starting SareetaApplication on 192.168.1.7 with PID 92865 (/Users/votrandinhlong/Udacity_java/Workplace/Udacity_c4_LongVTD1/target/classes started by votrandinhlong in /Users/votrandinhlong/Udacity_java/Workplace/Udacity_c4_LongVTD1)
-2023-10-08 21:10:32,650 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
-2023-10-08 21:10:32,650 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2023-10-08 21:10:34,252 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'JWTAuthenticationVerficationFilter' configured for use
-2023-10-08 21:10:34,357 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-08 21:10:34,519 INFO org.springframework.boot.StartupInfoLogger [main] Started SareetaApplication in 2.03 seconds (JVM running for 2.37)
-2023-10-08 21:10:41,742 INFO com.example.demo.controllers.ItemController [http-nio-8080-exec-1] INPUT: (GET)/api/item/{id}: id(Long): 1
+2023-10-09 01:39:21,068 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h3m39s237ms).
+2023-10-09 02:36:31,782 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57m10s723ms).
+2023-10-09 03:29:46,741 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m14s958ms).
+2023-10-09 03:37:44,505 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m57s765ms).
+2023-10-09 04:56:07,863 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h18m23s359ms).
+2023-10-09 06:11:46,356 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h15m38s492ms).
+2023-10-09 07:15:23,664 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h3m37s308ms).
+2023-10-09 07:41:22,992 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m59s328ms).
+2023-10-09 08:22:58,136 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=41m35s142ms).
+2023-10-09 08:30:48,584 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m50s451ms).
+2023-10-09 08:32:52,028 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m3s441ms).
